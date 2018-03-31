@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="{{ url_for('static', filename='logo.png') }}" type="image/gif" sizes="16x16">
+    <title>WatsonHackApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img id="brand-image" src="{{ url_for('static', filename='logo.png') }}">
+      </div>
+
+      <div class="navbar-right">
+        <ul>
+          <li>
+            <div class="login-button">
+              Login
+            </div>
+          </li>
+          <li>Contact Us</li>
+          <li>FAQ</li>
+          <li>Home</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="title">
+        Welcome to Watson Geo Crop Assist
+      </div>
+
+      <div class="left-info-pane" style="overflow: auto;">
+        <a href="https://www.accuweather.com/en/us/new-york-ny/10007/current-weather/349727" class="aw-widget-legal">
+        <!--
+        By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+        -->
+        </a><div id="awtd1520595995933" class="aw-widget-36hour"  data-locationkey="" data-unit="c" data-language="en-us" data-useip="true" data-uid="awtd1520595995933" data-editlocation="true"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <p class="footer-info">
+          created by pseudomind
+        </p>
+      </div>
+    </footer>
+
+    <div class="saksham-bot">
+      <div class="bot-icon">
+        <i class="far fa-comment-alt"></i>
+      </div>
+      <div class="close-icon">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+
+    <div class="dialog-box">
+      <div class="dialog-header">
+        Saksham <hr>
+      </div>
+
+      <div class="dialog">
+        <div class="bot-says">
+          Hi! How can I help you?
+        </div>
+
+        <div class="user-says">
+          Hello
+        </div>
+      </div>
+
+      <div class="dialog-input">
+        <form method="post" action="/talk">
+          <input type="text" name="user-input" placeholder="Type Here" style="text-align: center;
+    padding: 1em;
+    position: absolute;
+    bottom: 0em;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Varela Round';
+    background-color: #6fbf6b;
+    border-width: 0px;
+    border-top: 1px solid #e7e7e7;
+    color: white;">
+        </form>
+      </div>
+    </div>
+
+    <div class="login-signup-modal">
+      <div class="login-form">
+        <div class="modal-header">
+          Login
+        </div>
+        <form method="get" action="">
+          Username &emsp;
+          <input type="text" name="name"><br>
+          Password &emsp;
+          <input type="Password" name="pass">
+        </form>
+      </div>
+
+<!--       <div class="signup-form">
+        <div class="modal-header">
+          Sign Up
+        </div>
+        <form method="get" action="">
+          Username<br>
+          <input type="text" name="name"><br>
+          Password<br>
+          <input type="Password" name="pass">
+        </form>
+      </div> -->
+    </div>
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCa-T0Oq8CQXowz7FocreHAcYePA-h0KE&callback=initMap">
+    </script>
+    <script type="text/javascript" src="../static/main.js"></script>
+</body>
+</html>
