@@ -1,4 +1,4 @@
-# IBM-WATSON-HACKATHON
+# IBM_Watson_Hackthon
 
 requirement!
 
