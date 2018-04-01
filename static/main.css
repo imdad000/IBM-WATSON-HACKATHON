@@ -1,0 +1,192 @@
+
+body {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: -1em;
+    padding: 1em;
+    font-family: 'Varela Round';
+    width: -webkit-fill-available;
+}
+
+nav {
+    padding: 2em 8em 2em 5em;
+    position: absolute;
+    top: 0px;
+    width: inherit;
+    background-image: url("../static/navbar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-left {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.navbar-right > ul {
+    list-style: none;
+    background-color: green;
+    border-radius: 43px;
+}
+
+.navbar-right > ul > li {
+    float: right;
+    padding: 1em 3em 0em 0em ;
+    color: black;
+}
+
+.login-button {
+    margin-top: -0.4em;
+    line-height: 0.8em;
+    float: right;
+    padding: 0.5em 3em 0.5em 3em;
+    border: 2px solid blue;
+    border-radius: 43px;
+}
+
+.container {
+    padding-top: 6em;
+    text-align: center;
+}
+
+.left-info-pane {
+    margin-top: 2em;
+
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-radius: 10px;
+
+    padding: 2em;
+    float: left;
+    width: 40vw;
+}
+
+footer {
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.saksham-bot {
+    padding: 1em;
+    border-radius: 100%;
+    background-color: #6fbf6b;
+
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+    box-shadow: initial;
+
+    font-size: 1.3em;
+}
+
+.dialog-box {
+    z-index: 10;
+    position: absolute;
+    height: 20em;
+    width: 30em;
+    background-color: #6fbf6b;
+    border-radius: 10px;
+    bottom: 12em;
+    right: 7em;
+
+    color: white;
+}
+
+.dialog-header {
+    padding: 1em 0em 0em 0em;
+    text-align: center;
+}
+
+.dialog {
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.user-says {
+    text-align: right;
+    padding: 0.2em 1em 0.2em 1em;
+    border-radius: 43px;
+}
+
+.bot-says {
+    text-align: left;
+    padding: 0.2em 1em 0.2em 1em;
+    border-radius: 43px;
+}
+
+.dialog-input > form > input {
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    bottom: 0em;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Varela Round';
+    background-color: #6fbf6b;
+    border-width: 0px;
+    color: white;
+}
+
+.login-signup-modal {
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b2378;
+}
+
+.login-form {
+    overflow: auto;
+    text-align: center;
+    border-radius: 1.2em;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+
+    margin-top: 4em;
+    margin-left: 20em;
+}
+
+.modal-header {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #6fbf6b;
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    color: white;
+}
+
+.login-form > form {
+    padding-top: 4em;
+}
+
+.login-form > form > input {
+    padding: 0.5em;
+    border: 0px 0px 1px 0px;
+    margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+    #brand-image {
+        padding: 1em 0em 1em 2em;
+        height: 3em;
+        width: auto;
+    }
+}
+
+@media (max-width: 420px) {
+
+}
